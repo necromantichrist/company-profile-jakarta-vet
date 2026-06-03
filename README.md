@@ -13,7 +13,7 @@ git clone https://github.com/necromantichrist/company-profile-jakarta-vet.git
 
 2. Install dependency
 
-composer install
+composer installl
 npm install
 
 3. Copy file environment
