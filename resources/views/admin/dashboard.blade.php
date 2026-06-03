@@ -1,0 +1,33 @@
+@extends('layouts.admin')
+
+@section('content')
+
+@vite('resources/css/admin-dashboard.css')
+
+<main class="dashboard-wrapper">
+    
+    <header class="dashboard-header">
+        <h1 class="dashboard-title">Dashboard Overview</h1>
+        <div class="dashboard-subtitle">Selamat datang kembali di panel admin Jakarta Top Dogs.</div>
+    </header>
+
+    <section class="row">
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card shadow stat-card">
+                <div class="card-body">
+                    <div class="stat-icon-box">
+                        📰 </div>
+                    <div class="stat-content">
+                        <span class="stat-number">{{ \App\Models\News::count() }}</span>
+                        <h2 class="stat-label">Total News</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+</main>
+
+@endsection

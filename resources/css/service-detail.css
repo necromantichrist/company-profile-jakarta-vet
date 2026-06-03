@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+.service-detail{
+    padding: 40px 0 80px;
+    background: #ffffff;
+}
+
+.detail-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.detail-banner{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.detail-banner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-title{
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+
+    background: rgba(8,42,140,.8);
+
+    color: white;
+
+    padding: 20px 40px;
+
+    font-size: 56px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.detail-content{
+    color: #666;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.detail-content ul{
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.detail-content li{
+    margin-bottom: 10px;
+}
+
+/* =======================================
+   FOOTER SECTION STYLES
+   ======================================= */
+
+.main-footer {
+    width: 100%;
+    background-color: #f5f5f5; /* Background abu-abu tipis sesuai gambar */
+    padding: 100px 40px 30px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr 1.2fr; /* Kolom info sedikit lebih lebar dari kolom logo */
+    gap: 40px;
+}
+
+/* Gaya Identitas Brand / Logo Kiri */
+.footer-logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo-icon {
+    color: #06258d;
+}
+
+/* Nama Cabang */
+.footer-branch h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+/* Garis bawah penanda warna merah di setiap cabang */
+.branch-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #cf2c24;
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+/* Daftar Informasi Detail */
+.branch-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.branch-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Styling Ikon Kecil (Maps, Phone, IG, Clock) */
+.info-icon {
+    font-size: 16px;
+    color: #06258d;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Teks Detail Informasi */
+.branch-info p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Bagian Hak Cipta di Bawah */
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-copyright p {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 1100px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr); /* Menjadi 2 kolom di tablet */
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Menjadi 1 kolom penuh di mobile */
+        padding: 0 30px;
+    }
+    
+    .footer-brand {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:768px){
+
+    .detail-banner img{
+        height: 300px;
+    }
+
+    .banner-title{
+        font-size: 30px;
+        padding: 15px 25px;
+        bottom: 40px;
+    }
+
+}

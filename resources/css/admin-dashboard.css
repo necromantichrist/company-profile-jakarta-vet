@@ -1,0 +1,85 @@
+/* resources/css/admin-dashboard.css */
+
+.body{
+    background: #ffffff;
+}
+
+.dashboard-wrapper {
+    padding: 10px 5px;
+}
+
+/* Header Styles */
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.dashboard-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Kustomisasi Base Card Bootstrap */
+.stat-card {
+    background: #ffffff;
+    border: none !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek Hover Interaktif */
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.stat-card .card-body {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Kotak Ikon */
+.stat-icon-box {
+    width: 55px;
+    height: 55px;
+    background-color: rgba(6, 37, 141, 0.08); /* Biru transparan tipis */
+    color: #06258d;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Angka Statistik */
+.stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #06258d; /* Warna utama identitas web */
+    line-height: 1.2;
+}
+
+/* Label Deskripsi */
+.stat-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0;
+}

@@ -1,0 +1,278 @@
+/* resources/css/admin.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff; /* Abu-abu ultra tipis agar card putih terlihat kontras */
+    color: #1a1a1a;
+    padding-top: 70px; /* Memberi ruang agar konten tidak tertutup topbar yang fixed */
+}
+
+/* TOPBAR HEADER */
+.admin-topbar {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.topbar-container {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* BRAND LOGO */
+.admin-brand {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #06258d; /* Warna biru utama identitas klinik */
+    border-radius: 50%;
+}
+
+/* NAVIGASI MENULINKS */
+.admin-nav {
+    height: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #1a1a1a;
+}
+
+/* Tanda Menu Aktif (Garis Bawah Minimalis) */
+.nav-links li.active a {
+    color: #06258d;
+    font-weight: 600;
+}
+
+.nav-links li.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Tepat di atas border topbar */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #06258d;
+}
+
+.nav-external {
+    font-size: 14px !important;
+    color: #8c8c8c !important;
+}
+
+/* =======================================
+   MINIMALIST LOGIN PAGE STYLES
+   ======================================= */
+
+.login-page {
+    background-color: #fcfcfc !important;
+    padding-top: 0 !important; /* Reset padding topbar admin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.login-brand {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: #8c8c8c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Custom Form Input */
+.form-label-custom {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.form-control-custom {
+    width: 100%;
+    padding: 11px 16px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form-control-custom:focus {
+    border-color: #06258d;
+    box-shadow: 0 0 0 3px rgba(6, 37, 141, 0.1);
+}
+
+/* Validasi Error */
+.form-control-custom.is-invalid {
+    border-color: #e63946;
+    background-color: #fffafb;
+}
+
+.invalid-feedback-custom {
+    font-size: 12px;
+    color: #e63946;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+/* Links & Checkbox */
+.forgot-password-link {
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password-link:hover {
+    color: #06258d;
+    text-decoration: underline;
+}
+
+.form-check-input-custom {
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-check-label-custom {
+    font-size: 13px;
+    color: #666666;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Button Login */
+.btn-login-submit {
+    width: 100%;
+    background-color: #06258d; /* Senada dengan aksen web Anda */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-login-submit:hover {
+    background-color: #041a63;
+}
+
+/* LOGOUT MINIMALIS */
+.btn-minimal-logout {
+    background: transparent;
+    border: none;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-minimal-logout:hover {
+    color: #e63946; /* Berubah merah halus saat diarahkan pointer */
+    background-color: rgba(230, 57, 70, 0.05);
+}
+
+/* MAIN WRAPPER CONTROLLER */
+.admin-main-wrapper {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 768px) {
+    .topbar-container {
+        padding: 0 20px;
+    }
+    
+    .nav-links {
+        gap: 16px;
+    }
+    
+    .content-container {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px; /* Batas lebar maksimal konten agar tidak terlalu melar di layar besar */
+    margin: 0 auto;    /* Membuat konten otomatis berada di tengah-tengah layar */
+    padding: 0 20px;   /* Memberikan jarak aman di kanan-kiri pada layar HP/kecil */
+}
+
+.news-hero{
+    text-align:center;
+}
+
+.news-hero h1{
+    font-size:30px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.news-hero p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+.news-section{
+    padding:40px 0;
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.news-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.news-card:hover{
+    transform:translateY(-8px);
+}
+
+.news-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.news-content{
+    padding:25px;
+}
+
+.news-date{
+    color:#888;
+    font-size:14px;
+}
+
+.news-content h3{
+    margin:15px 0;
+    font-size:24px;
+}
+
+.news-content p{
+    color:#666;
+    line-height:1.8;
+}
+
+.read-more{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#082b8d;
+    font-weight:700;
+}
+
+.detail-news{
+    padding:80px 0;
+}
+
+.detail-title{
+    font-size:48px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.detail-date{
+    color:#777;
+    margin-bottom:30px;
+}
+
+.detail-image{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:40px;
+}
+
+.detail-content{
+    line-height:2;
+    color:#444;
+    font-size:17px;
+}
+
+@media(max-width:992px){
+
+.news-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.news-grid{
+    grid-template-columns:1fr;
+}
+
+.news-hero h1{
+    font-size:40px;
+}
+
+}
